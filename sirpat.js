@@ -1,0 +1,158 @@
+
+//////////////////////
+// TABLE OF TWEETS
+    
+$(document).ready(function () {
+    var thead;
+    var thead_tr;
+    thead = $("<thead>");
+    thead_tr = $("<tr/>");
+    thead_tr.append("<th style='width: 10%'>Created</th>");
+    thead_tr.append("<th>Sonnet</th>");
+    thead_tr.append("<th>Link</th>");
+    thead_tr.append("<th style='text-align: right';>Likes</th>");
+    thead_tr.append("<th style='text-align: right';>Retweets</th>");
+    thead_tr.append("<th>Text</th>");
+    thead_tr.append("</tr>");
+    thead.append(thead_tr);
+    $('table').append(thead);
+    var tbody;
+    var tbody_tr;
+    tbody = $("<tbody>");
+    $('table').append(tbody);
+    for(var i = 0; i < sirpattweets.length; i++) {
+        var obj = sirpattweets[i];
+        tbody_tr = $('<tr/>');
+        
+        tbody_tr.append("<td>" + new Date(obj.created_at).toISOString().substring(0, 10) + "</td>");
+        tbody_tr.append("<td>" + getSonnetNumber(obj.text) + "</td>");
+        tbody_tr.append("<td><a href='" + obj.twitter_url + "' target='blank'>link</a></td>");
+        tbody_tr.append("<td style='text-align: right';>" + obj.favorite_count + "</td>");
+        tbody_tr.append("<td style='text-align: right';>" + obj.retweet_count + "</td>");
+        tbody_tr.append("<td>" + obj.text + "</td>");
+        tbody.append(tbody_tr);
+    }
+});
+
+function getSonnetNumber(text) {
+    var res = /Sonnet (\d+)/.exec(text) || /Sonnets (\d+)/.exec(text) || /Number (\d+)/.exec(text) || /Sonnets (\d+)/.exec(text);
+    return (res !== null) ? res[1] : 'Intermission';
+}
+
+// add tablesorter js to allow user to sort table by column headers
+$(document).ready(function($){ 
+    $("#sirpattweets").tablesorter();
+}); 
+
+//////////////////////
+// CHART OF TWEET LIKE AND RETWEETS
+
+var sonnets = [];
+var likes = [];
+var retweets = [];
+for(var i = 0; i < sirpattweets.length; i++) {
+    var obj = sirpattweets[i];
+    if (getSonnetNumber(obj.text) !== 'Intermission') {
+        sonnets.push(getSonnetNumber(obj.text));
+        likes.push(obj.favorite_count);
+        retweets.push(obj.retweet_count);
+    }
+}
+
+var trace1 = {
+  type: 'scatter',
+  x: sonnets,
+  y: likes,
+  mode: 'markers',
+  name: 'Likes',
+  marker: {
+    color: 'rgba(156, 165, 196, 0.95)',
+    line: {
+      color: 'rgba(156, 165, 196, 1.0)',
+      width: 1,
+    },
+    symbol: 'circle',
+    size: 10
+  }
+};
+
+var trace2 = {
+  x: sonnets,
+  y: retweets,
+  mode: 'markers',
+  name: 'Retweets',
+  marker: {
+    color: 'rgba(204, 204, 204, 0.95)',
+    line: {
+      color: 'rgba(217, 217, 217, 1.0)',
+      width: 1,
+    },
+    symbol: 'circle',
+    size: 10
+  }
+};
+
+var data = [trace1, trace2];
+
+var layout = {
+  //title: '@SirPat Sonnet Reading Like and Retweet Counts',
+  xaxis: {
+    title: {
+        text: 'Sonnet Number',
+        font: {
+          size: 11,
+        }
+      },
+    tickangle: -45,
+    showticklabels: true,
+    type: 'category',
+    zeroline: false,
+    showgrid: true,
+    showline: false,
+    titlefont: {
+      font: {
+        color: 'rgb(204, 204, 204)'
+      }
+    },
+    tickfont: {
+        size: 10,
+      font: {
+        color: 'rgb(102, 102, 102)'
+      }
+    },
+    //autotick: true,
+    //dtick: 10,
+    ticks: 'outside',
+    tickcolor: 'rgb(102, 102, 102)'
+  },
+  yaxis: {
+    showgrid: false,
+    gridcolor: 'rgb(102, 102, 102)',
+    gridwidth: 1,
+    showline: false,
+    tickfont: {
+        size: 10
+    }
+  },
+  margin: {
+    l: 70,
+    r: 40,
+    b: 80,
+    t: 10
+  },
+  legend: {
+    "orientation": "h",
+    x: 0,
+    xanchor: 'left',
+    y: 1.3,
+    bgcolor: 'rgba(0,0,0,0)',
+    font: {
+      size: 10,
+    },
+  },
+  width: 800,
+  height: 300,
+  hovermode: 'closest'
+};
+
+Plotly.newPlot('chart', data, layout,{displayModeBar: false});

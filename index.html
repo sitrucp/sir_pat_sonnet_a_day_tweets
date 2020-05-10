@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@SirPatStew ASonnetADay</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js" integrity="sha256-Xb6SSzhH3wEPC4Vy3W70Lqh9Y3Du/3KxPqI2JHQSpTw=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha256-dtGH1XcAyKopMui5x20KnPxuGuSx9Rs6piJB/4Oqu6I=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>@SirPatStew #ASonnetADay</h3>
+            <p>Twitter audience interest in <a href="https://twitter.com/SirPatStew" target="blank">@SirPatStew</a> Twitter #ASonnetADay Shakespeare Sonnet readings</p>
+            <ul class="list-unstyled">
+                 <li>Chart of like and retweet counts by sonnet number.</li>
+                 <li>List of #ASonnetADay tweets with links to tweet.</li>
+            </ul>
+            <div id="chart"></div>
+            <p class="small">Click on column header to sort asc/desc</p>
+            <table id="sirpattweets" class="table tablesorter"></table>
+        </div>
+    </div>
+</div>
+    <script src="sirpattweets.json" type="text/javascript"></script>
+    <script src="sirpat.js"></script>
+
+</body>
+</html>
