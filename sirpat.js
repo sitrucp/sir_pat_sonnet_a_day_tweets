@@ -135,7 +135,7 @@ var layout = {
     }
   },
   margin: {
-    l: 70,
+    l: 30,
     r: 40,
     b: 80,
     t: 10
