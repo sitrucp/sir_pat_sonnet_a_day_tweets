@@ -12,7 +12,7 @@ $(document).ready(function () {
     thead_tr.append("<th>Link</th>");
     thead_tr.append("<th style='text-align: right';>Likes</th>");
     thead_tr.append("<th style='text-align: right';>Retweets</th>");
-    thead_tr.append("<th>Text</th>");
+    thead_tr.append("<th>Tweet</th>");
     thead_tr.append("</tr>");
     thead.append(thead_tr);
     $('table').append(thead);
