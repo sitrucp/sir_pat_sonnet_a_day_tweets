@@ -50,14 +50,20 @@ $(document).ready(function($){
 var sonnets = [];
 var likes = [];
 var retweets = [];
+var totalLikes = null
+var totalRetweeets = null;
 for(var i = 0; i < sirpattweets.length; i++) {
     var obj = sirpattweets[i];
     if (getSonnetNumber(obj.text) !== 'Intermission') {
         sonnets.push(getSonnetNumber(obj.text));
         likes.push(obj.favorite_count);
         retweets.push(obj.retweet_count);
+        totalLikes += parseInt(obj.favorite_count);
+        totalRetweeets += parseInt(obj.retweet_count);
     }
 }
+
+document.getElementById('totals').innerHTML = 'Totals for all ASonnetADay Tweets:  Likes = ' + totalLikes.toLocaleString() + ' Total Retweets = ' + totalRetweeets.toLocaleString();
 
 var trace1 = {
   type: 'scatter',
@@ -156,3 +162,4 @@ var layout = {
 };
 
 Plotly.newPlot('chart', data, layout,{displayModeBar: false});
+
