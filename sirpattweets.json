@@ -4,8 +4,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1242205662194601985",
         "created_at": "2020-03-23 21:44:43",
-        "retweet_count": "8586",
-        "favorite_count": "38478",
+        "retweet_count": "8584",
+        "favorite_count": "38482",
         "text": "Sonnet 2. This is one of my favorites. #ASonnetADay https://t.co/aQBzrsETKv",
         "twitter_url": "https://twitter.com/SirPatStew/status/1242205662194601985"
     },
@@ -13,8 +13,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1242573244860948481",
         "created_at": "2020-03-24 22:05:22",
-        "retweet_count": "6605",
-        "favorite_count": "31892",
+        "retweet_count": "6604",
+        "favorite_count": "31893",
         "text": "Sonnet 3#ASonnetADay https://t.co/hI4GzH49P8",
         "twitter_url": "https://twitter.com/SirPatStew/status/1242573244860948481"
     },
@@ -22,8 +22,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1242887746982678529",
         "created_at": "2020-03-25 18:55:05",
-        "retweet_count": "3935",
-        "favorite_count": "19403",
+        "retweet_count": "3934",
+        "favorite_count": "19404",
         "text": "Sonnet 4. #ASonnetADay https://t.co/kr8bSBV5Vf",
         "twitter_url": "https://twitter.com/SirPatStew/status/1242887746982678529"
     },
@@ -31,8 +31,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1243292618550915072",
         "created_at": "2020-03-26 21:43:54",
-        "retweet_count": "3975",
-        "favorite_count": "21272",
+        "retweet_count": "3976",
+        "favorite_count": "21274",
         "text": "Sonnet 5 is too hard. Here’s number 6. #ASonnetADay https://t.co/WfPppZxc8Z",
         "twitter_url": "https://twitter.com/SirPatStew/status/1243292618550915072"
     },
@@ -40,8 +40,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1243637040803188738",
         "created_at": "2020-03-27 20:32:30",
-        "retweet_count": "3906",
-        "favorite_count": "19778",
+        "retweet_count": "3905",
+        "favorite_count": "19779",
         "text": "Sonnet 7. #ASonnetADay https://t.co/vhDIp0ZL9p",
         "twitter_url": "https://twitter.com/SirPatStew/status/1243637040803188738"
     },
@@ -49,8 +49,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1243985374982164483",
         "created_at": "2020-03-28 19:36:40",
-        "retweet_count": "4127",
-        "favorite_count": "21442",
+        "retweet_count": "4125",
+        "favorite_count": "21441",
         "text": "A Saturday sonnet. Number 8. #ASonnetADay https://t.co/YP7zJfVwJH",
         "twitter_url": "https://twitter.com/SirPatStew/status/1243985374982164483"
     },
@@ -58,8 +58,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1244356954283298816",
         "created_at": "2020-03-29 20:13:11",
-        "retweet_count": "5138",
-        "favorite_count": "27022",
+        "retweet_count": "5137",
+        "favorite_count": "27021",
         "text": "Sonnet 10. #ASonnetADay https://t.co/yKA0zttI4o",
         "twitter_url": "https://twitter.com/SirPatStew/status/1244356954283298816"
     },
@@ -68,7 +68,7 @@ var sirpattweets =
         "id": "1244737103386292225",
         "created_at": "2020-03-30 21:23:46",
         "retweet_count": "3378",
-        "favorite_count": "16579",
+        "favorite_count": "16578",
         "text": "First sonnet of the week. Sonnet 11. #ASonnetADay https://t.co/EKJT1Orn0A",
         "twitter_url": "https://twitter.com/SirPatStew/status/1244737103386292225"
     },
@@ -76,8 +76,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1245081963075178496",
         "created_at": "2020-03-31 20:14:07",
-        "retweet_count": "5133",
-        "favorite_count": "25706",
+        "retweet_count": "5132",
+        "favorite_count": "25704",
         "text": "Sonnet 12. I hope you’re ready for this. #ASonnetADay https://t.co/B4v1leZ2qi",
         "twitter_url": "https://twitter.com/SirPatStew/status/1245081963075178496"
     },
@@ -86,7 +86,7 @@ var sirpattweets =
         "id": "1245475388689653762",
         "created_at": "2020-04-01 22:17:27",
         "retweet_count": "3844",
-        "favorite_count": "19654",
+        "favorite_count": "19650",
         "text": "Sonnet 13. #ASonnetADay https://t.co/n6kfnf8rWC",
         "twitter_url": "https://twitter.com/SirPatStew/status/1245475388689653762"
     },
@@ -94,8 +94,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1245825193496502279",
         "created_at": "2020-04-02 21:27:27",
-        "retweet_count": "3528",
-        "favorite_count": "17989",
+        "retweet_count": "3526",
+        "favorite_count": "17985",
         "text": "Sonnet 14. #ASonnetADay https://t.co/GwWs0BYnAu",
         "twitter_url": "https://twitter.com/SirPatStew/status/1245825193496502279"
     },
@@ -103,8 +103,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1246153225474060290",
         "created_at": "2020-04-03 19:10:56",
-        "retweet_count": "3953",
-        "favorite_count": "22249",
+        "retweet_count": "3951",
+        "favorite_count": "22245",
         "text": "Sonnet 15. Very difficult. #ASonnetADay https://t.co/mlvbZT2yi6",
         "twitter_url": "https://twitter.com/SirPatStew/status/1246153225474060290"
     },
@@ -113,7 +113,7 @@ var sirpattweets =
         "id": "1246551507463557124",
         "created_at": "2020-04-04 21:33:33",
         "retweet_count": "4595",
-        "favorite_count": "26331",
+        "favorite_count": "26328",
         "text": "Sonnet 16. Here goes. #ASonnetADay https://t.co/CqxHwpuSNa",
         "twitter_url": "https://twitter.com/SirPatStew/status/1246551507463557124"
     },
@@ -121,8 +121,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1246897968751546369",
         "created_at": "2020-04-05 20:30:16",
-        "retweet_count": "4136",
-        "favorite_count": "23162",
+        "retweet_count": "4134",
+        "favorite_count": "23161",
         "text": "We've reached Sonnet 17, a mini landmark in these 154 sonnets. #ASonnetADay https://t.co/tVBxrrW1fE",
         "twitter_url": "https://twitter.com/SirPatStew/status/1246897968751546369"
     },
@@ -130,8 +130,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1247312842321248257",
         "created_at": "2020-04-06 23:58:50",
-        "retweet_count": "6143",
-        "favorite_count": "27765",
+        "retweet_count": "6144",
+        "favorite_count": "27762",
         "text": "Sonnet 18. Perhaps the most well-known sonnet in the book. Speaking of the book, a little backstory on that too. #ASonnetADay https://t.co/XjSDIntMos",
         "twitter_url": "https://twitter.com/SirPatStew/status/1247312842321248257"
     },
@@ -140,7 +140,7 @@ var sirpattweets =
         "id": "1247663137006006278",
         "created_at": "2020-04-07 23:10:46",
         "retweet_count": "3926",
-        "favorite_count": "20550",
+        "favorite_count": "20549",
         "text": "Sonnet 19. #ASonnetADay https://t.co/6LNvsVwbYK",
         "twitter_url": "https://twitter.com/SirPatStew/status/1247663137006006278"
     },
@@ -149,7 +149,7 @@ var sirpattweets =
         "id": "1248059279405432832",
         "created_at": "2020-04-09 01:24:54",
         "retweet_count": "3280",
-        "favorite_count": "18979",
+        "favorite_count": "18977",
         "text": "Sonnet 21. #ASonnetADay https://t.co/qaTxc24UCt",
         "twitter_url": "https://twitter.com/SirPatStew/status/1248059279405432832"
     },
@@ -157,8 +157,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1248424782502092800",
         "created_at": "2020-04-10 01:37:17",
-        "retweet_count": "3416",
-        "favorite_count": "18205",
+        "retweet_count": "3415",
+        "favorite_count": "18203",
         "text": "Sonnet 23. #ASonnetADay https://t.co/i3jW5tOpWb",
         "twitter_url": "https://twitter.com/SirPatStew/status/1248424782502092800"
     },
@@ -167,7 +167,7 @@ var sirpattweets =
         "id": "1248725811311632386",
         "created_at": "2020-04-10 21:33:28",
         "retweet_count": "3290",
-        "favorite_count": "17962",
+        "favorite_count": "17961",
         "text": "Sonnet 24. #ASonnetADay https://t.co/byyEW79kxG",
         "twitter_url": "https://twitter.com/SirPatStew/status/1248725811311632386"
     },
@@ -176,7 +176,7 @@ var sirpattweets =
         "id": "1249128293711974400",
         "created_at": "2020-04-12 00:12:47",
         "retweet_count": "3909",
-        "favorite_count": "21718",
+        "favorite_count": "21719",
         "text": "Sonnet 25. An unusual one, which I had never read until today. #ASonnetADay https://t.co/Ri1iEz3e0q",
         "twitter_url": "https://twitter.com/SirPatStew/status/1249128293711974400"
     },
@@ -185,7 +185,7 @@ var sirpattweets =
         "id": "1249474375402823682",
         "created_at": "2020-04-12 23:07:59",
         "retweet_count": "4018",
-        "favorite_count": "22352",
+        "favorite_count": "22349",
         "text": "Sonnet 73 for Sir Stirling Moss. #ASonnetADay https://t.co/QbFhrFhwKO",
         "twitter_url": "https://twitter.com/SirPatStew/status/1249474375402823682"
     },
@@ -194,7 +194,7 @@ var sirpattweets =
         "id": "1249812418236166144",
         "created_at": "2020-04-13 21:31:15",
         "retweet_count": "2815",
-        "favorite_count": "15229",
+        "favorite_count": "15226",
         "text": "Sonnet 26. #ASonnetADay https://t.co/lS6ZGuYsDp",
         "twitter_url": "https://twitter.com/SirPatStew/status/1249812418236166144"
     },
@@ -211,8 +211,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1250611739940487168",
         "created_at": "2020-04-16 02:27:28",
-        "retweet_count": "3838",
-        "favorite_count": "21638",
+        "retweet_count": "3837",
+        "favorite_count": "21640",
         "text": "Sonnet 29. #ASonnetADay https://t.co/nfH4ybFC3y",
         "twitter_url": "https://twitter.com/SirPatStew/status/1250611739940487168"
     },
@@ -220,8 +220,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1251134880265703431",
         "created_at": "2020-04-17 13:06:15",
-        "retweet_count": "2890",
-        "favorite_count": "16462",
+        "retweet_count": "2891",
+        "favorite_count": "16460",
         "text": "Another take on Sonnet 29 and Sonnet 30, new to me but have grown fond of it. #ASonnetADay https://t.co/5WXvzAV7Vn",
         "twitter_url": "https://twitter.com/SirPatStew/status/1251134880265703431"
     },
@@ -239,7 +239,7 @@ var sirpattweets =
         "id": "1252021354918002690",
         "created_at": "2020-04-19 23:48:47",
         "retweet_count": "2917",
-        "favorite_count": "16986",
+        "favorite_count": "16985",
         "text": "Sonnet 33. #ASonnetADay https://t.co/atIImkyNWs",
         "twitter_url": "https://twitter.com/SirPatStew/status/1252021354918002690"
     },
@@ -247,8 +247,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1252651594962939904",
         "created_at": "2020-04-21 17:33:08",
-        "retweet_count": "2761",
-        "favorite_count": "15507",
+        "retweet_count": "2760",
+        "favorite_count": "15505",
         "text": "Sonnet 34. #ASonnetADay https://t.co/2rOB2Ufwtg",
         "twitter_url": "https://twitter.com/SirPatStew/status/1252651594962939904"
     },
@@ -257,7 +257,7 @@ var sirpattweets =
         "id": "1252745666465587202",
         "created_at": "2020-04-21 23:46:56",
         "retweet_count": "2987",
-        "favorite_count": "16894",
+        "favorite_count": "16893",
         "text": "Sonnet 35. #ASonnetADay https://t.co/MTvAlukntx",
         "twitter_url": "https://twitter.com/SirPatStew/status/1252745666465587202"
     },
@@ -274,7 +274,7 @@ var sirpattweets =
         "hashtags": "StGeorgesDay ShakespeareDay ASonnetADay",
         "id": "1253434741157531648",
         "created_at": "2020-04-23 21:25:04",
-        "retweet_count": "2478",
+        "retweet_count": "2477",
         "favorite_count": "13406",
         "text": "Happy #StGeorgesDay and #ShakespeareDay! Here is Sonnet 37.   #ASonnetADay https://t.co/nmp0PzQcFo",
         "twitter_url": "https://twitter.com/SirPatStew/status/1253434741157531648"
@@ -311,7 +311,7 @@ var sirpattweets =
         "id": "1254963819807473665",
         "created_at": "2020-04-28 02:41:05",
         "retweet_count": "6471",
-        "favorite_count": "36859",
+        "favorite_count": "36857",
         "text": "Sonnet 40 with my friend Glen. #ASonnetADay https://t.co/rQc0RYTZmO",
         "twitter_url": "https://twitter.com/SirPatStew/status/1254963819807473665"
     },
@@ -320,7 +320,7 @@ var sirpattweets =
         "id": "1255319559818657794",
         "created_at": "2020-04-29 02:14:40",
         "retweet_count": "2532",
-        "favorite_count": "16320",
+        "favorite_count": "16319",
         "text": "Sonnet 41 over iced coffee. #ASonnetADay https://t.co/MavJ8ZUNW9",
         "twitter_url": "https://twitter.com/SirPatStew/status/1255319559818657794"
     },
@@ -338,7 +338,7 @@ var sirpattweets =
         "id": "1256026428396630018",
         "created_at": "2020-05-01 01:03:31",
         "retweet_count": "3091",
-        "favorite_count": "17644",
+        "favorite_count": "17642",
         "text": "Sonnet 43. One of my favourites. #ASonnetADay https://t.co/x4GrEWd9C5",
         "twitter_url": "https://twitter.com/SirPatStew/status/1256026428396630018"
     },
@@ -356,7 +356,7 @@ var sirpattweets =
         "id": "1256753105598918661",
         "created_at": "2020-05-03 01:11:04",
         "retweet_count": "3167",
-        "favorite_count": "20096",
+        "favorite_count": "20095",
         "text": "Well, it’s sonnet time again. Here we are, Sonnet 44. #ASonnetADay https://t.co/am4Vhog0mr",
         "twitter_url": "https://twitter.com/SirPatStew/status/1256753105598918661"
     },
@@ -365,7 +365,7 @@ var sirpattweets =
         "id": "1257120964132945922",
         "created_at": "2020-05-04 01:32:48",
         "retweet_count": "2490",
-        "favorite_count": "15451",
+        "favorite_count": "15449",
         "text": "Sonnet 45. #ASonnetADay https://t.co/I53ANdl1qJ",
         "twitter_url": "https://twitter.com/SirPatStew/status/1257120964132945922"
     },
@@ -382,8 +382,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1257803094772965376",
         "created_at": "2020-05-05 22:43:21",
-        "retweet_count": "2455",
-        "favorite_count": "14744",
+        "retweet_count": "2454",
+        "favorite_count": "14745",
         "text": "Sonnet 47. Lovely. #ASonnetADay https://t.co/UqRPSsADPm",
         "twitter_url": "https://twitter.com/SirPatStew/status/1257803094772965376"
     },
@@ -392,7 +392,7 @@ var sirpattweets =
         "id": "1258214714422644737",
         "created_at": "2020-05-07 01:58:59",
         "retweet_count": "2389",
-        "favorite_count": "14572",
+        "favorite_count": "14571",
         "text": "Sonnet 48. #ASonnetADay https://t.co/5kruQSHXfX",
         "twitter_url": "https://twitter.com/SirPatStew/status/1258214714422644737"
     },
@@ -401,7 +401,7 @@ var sirpattweets =
         "id": "1258552968044875777",
         "created_at": "2020-05-08 00:23:05",
         "retweet_count": "2178",
-        "favorite_count": "13643",
+        "favorite_count": "13642",
         "text": "Sonnet 49. #ASonnetADay https://t.co/yVb43lktPc",
         "twitter_url": "https://twitter.com/SirPatStew/status/1258552968044875777"
     },
@@ -409,8 +409,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1258904532626489345",
         "created_at": "2020-05-08 23:40:04",
-        "retweet_count": "3011",
-        "favorite_count": "20603",
+        "retweet_count": "3009",
+        "favorite_count": "20599",
         "text": "We’ve arrived at Sonnet 50! I hope my hat is not too much of a distraction. #ASonnetADay https://t.co/N3VEOulWC6",
         "twitter_url": "https://twitter.com/SirPatStew/status/1258904532626489345"
     },
@@ -437,7 +437,7 @@ var sirpattweets =
         "id": "1259975807834849280",
         "created_at": "2020-05-11 22:36:56",
         "retweet_count": "2375",
-        "favorite_count": "14725",
+        "favorite_count": "14723",
         "text": "Sonnet 52. Can you believe that? #ASonnetADay https://t.co/gCtll3swv9",
         "twitter_url": "https://twitter.com/SirPatStew/status/1259975807834849280"
     },
@@ -445,7 +445,7 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1260349082129727489",
         "created_at": "2020-05-12 23:20:11",
-        "retweet_count": "3053",
+        "retweet_count": "3054",
         "favorite_count": "18536",
         "text": "Good morning. Good afternoon. Good evening. Sonnet 53. I like this one. #ASonnetADay https://t.co/kC3rIrGxkH",
         "twitter_url": "https://twitter.com/SirPatStew/status/1260349082129727489"
@@ -454,8 +454,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1260743909967159297",
         "created_at": "2020-05-14 01:29:06",
-        "retweet_count": "2371",
-        "favorite_count": "14660",
+        "retweet_count": "2372",
+        "favorite_count": "14658",
         "text": "Sonnet 54. #ASonnetADay https://t.co/F4Cm6VXt2R",
         "twitter_url": "https://twitter.com/SirPatStew/status/1260743909967159297"
     },
@@ -463,8 +463,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1261074942700867590",
         "created_at": "2020-05-14 23:24:30",
-        "retweet_count": "2455",
-        "favorite_count": "14657",
+        "retweet_count": "2456",
+        "favorite_count": "14662",
         "text": "It’s sonnet time again and here we are with a beauty! Sonnet 55. #ASonnetADay https://t.co/ZcrGLL2EI5",
         "twitter_url": "https://twitter.com/SirPatStew/status/1261074942700867590"
     },
@@ -472,8 +472,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1261450603038797824",
         "created_at": "2020-05-16 00:17:15",
-        "retweet_count": "2575",
-        "favorite_count": "15704",
+        "retweet_count": "2574",
+        "favorite_count": "15705",
         "text": "Sonnet 56. #ASonnetADay https://t.co/dvKZNEynn7",
         "twitter_url": "https://twitter.com/SirPatStew/status/1261450603038797824"
     },
@@ -481,8 +481,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1261806885960921091",
         "created_at": "2020-05-16 23:52:59",
-        "retweet_count": "5482",
-        "favorite_count": "33491",
+        "retweet_count": "5485",
+        "favorite_count": "33512",
         "text": "Pleased to share that we have our first guest sonneteer today. Socially distant yet always a close friend, @jonathansfrakes performs Sonnet 57. #ASonnetADay https://t.co/DNFiC5Qr2T",
         "twitter_url": "https://twitter.com/SirPatStew/status/1261806885960921091"
     },
@@ -491,7 +491,7 @@ var sirpattweets =
         "id": "1262190045265629185",
         "created_at": "2020-05-18 01:15:31",
         "retweet_count": "619",
-        "favorite_count": "9446",
+        "favorite_count": "9450",
         "text": "#ASonnetADay Intermission with my #LastNormalPhoto: Lucky me to be sat next to this table. They were having a semi-regular dinner called “CADS” (character actor’s dinner). @MJMcKean, @EricMcCormack, John C Reilly, @TheStevenWeber, Richard Kind, @OfficialMolina, and @kevinpollak https://t.co/knLnxlYlHK",
         "twitter_url": "https://twitter.com/SirPatStew/status/1262190045265629185"
     },
@@ -499,8 +499,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1262558619586965511",
         "created_at": "2020-05-19 01:40:06",
-        "retweet_count": "2518",
-        "favorite_count": "16887",
+        "retweet_count": "2523",
+        "favorite_count": "16910",
         "text": "59 ain’t gonna happen (any advice?). On to Sonnet 60. #ASonnetADay https://t.co/OaEseW3UKq",
         "twitter_url": "https://twitter.com/SirPatStew/status/1262558619586965511"
     },
@@ -508,8 +508,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1262892712652681223",
         "created_at": "2020-05-19 23:47:40",
-        "retweet_count": "2221",
-        "favorite_count": "13530",
+        "retweet_count": "2226",
+        "favorite_count": "13567",
         "text": "Sonnet 61. #ASonnetADay https://t.co/Vq87dZoAZa",
         "twitter_url": "https://twitter.com/SirPatStew/status/1262892712652681223"
     },
@@ -517,8 +517,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1263301577638633483",
         "created_at": "2020-05-21 02:52:21",
-        "retweet_count": "2679",
-        "favorite_count": "17845",
+        "retweet_count": "2705",
+        "favorite_count": "18104",
         "text": "Sonnet 62. #ASonnetADay https://t.co/te9TzjOOiX",
         "twitter_url": "https://twitter.com/SirPatStew/status/1263301577638633483"
     },
@@ -526,8 +526,8 @@ var sirpattweets =
         "hashtags": "ASonnetADay",
         "id": "1263678333088403462",
         "created_at": "2020-05-22 03:49:27",
-        "retweet_count": "1532",
-        "favorite_count": "10138",
+        "retweet_count": "1887",
+        "favorite_count": "13036",
         "text": "Sonnet 63! Taking a very brief hiatus while I work on another project that is coming soon. Enjoy the holiday weekend everyone. #ASonnetADay https://t.co/Ngyf2ALY7z",
         "twitter_url": "https://twitter.com/SirPatStew/status/1263678333088403462"
     }
