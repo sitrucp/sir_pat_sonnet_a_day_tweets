@@ -8,10 +8,10 @@ $(document).ready(function () {
     thead = $("<thead>");
     thead_tr = $("<tr/>");
     thead_tr.append("<th style='width: 10%'>Date</th>");
-    thead_tr.append("<th>Sonnet</th>");
-    thead_tr.append("<th>Link</th>");
-    thead_tr.append("<th style='text-align: right';>Likes</th>");
-    thead_tr.append("<th style='text-align: right';>Retweets</th>");
+    thead_tr.append("<th style='text-align: center'>Sonnet</th>");
+    thead_tr.append("<th style='text-align: center'>Link</th>");
+    thead_tr.append("<th style='text-align: right'>Likes</th>");
+    thead_tr.append("<th style='text-align: right'>Retweets</th>");
     thead_tr.append("<th>Tweet</th>");
     thead_tr.append("</tr>");
     thead.append(thead_tr);
@@ -25,10 +25,10 @@ $(document).ready(function () {
         tbody_tr = $('<tr/>');
         
         tbody_tr.append("<td>" + new Date(obj.created_at).toISOString().substring(0, 10) + "</td>");
-        tbody_tr.append("<td>" + getSonnetNumber(obj.text) + "</td>");
-        tbody_tr.append("<td><a href='" + obj.twitter_url + "' target='blank'>link</a></td>");
-        tbody_tr.append("<td style='text-align: right';>" + obj.favorite_count + "</td>");
-        tbody_tr.append("<td style='text-align: right';>" + obj.retweet_count + "</td>");
+        tbody_tr.append("<td style='text-align: center'>" + getSonnetNumber(obj.text) + "</td>");
+        tbody_tr.append("<td style='text-align: center'><a href='" + obj.twitter_url + "' target='blank'>link</a></td>");
+        tbody_tr.append("<td style='text-align: right'>" + parseInt(obj.favorite_count).toLocaleString() + "</td>");
+        tbody_tr.append("<td style='text-align: right'>" + parseInt(obj.retweet_count).toLocaleString() + "</td>");
         tbody_tr.append("<td>" + obj.text + "</td>");
         tbody.append(tbody_tr);
     }
