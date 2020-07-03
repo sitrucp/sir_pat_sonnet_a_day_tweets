@@ -161,5 +161,10 @@ var layout = {
   hovermode: 'closest'
 };
 
-Plotly.newPlot('chart', data, layout,{displayModeBar: false});
+var config = {
+    displayModeBar: false,
+    responsive: true
+};
+
+Plotly.newPlot('chart', data, layout,config);
 
