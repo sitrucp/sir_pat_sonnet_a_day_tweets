@@ -83,8 +83,8 @@ var trace1 = {
 };
 
 var trace2 = {
-  x: sonnets,
-  y: retweets,
+    x: sonnets,
+    y: retweets,
   mode: 'markers',
   name: 'Retweets',
   marker: {
@@ -142,7 +142,7 @@ var layout = {
   },
   margin: {
     l: 30,
-    r: 40,
+    r: 10,
     b: 80,
     t: 10
   },
@@ -156,8 +156,7 @@ var layout = {
       size: 10,
     },
   },
-  width: 800,
-  height: 300,
+
   hovermode: 'closest'
 };
 
