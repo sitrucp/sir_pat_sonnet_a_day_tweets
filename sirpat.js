@@ -63,7 +63,7 @@ for(var i = 0; i < sirpattweets.length; i++) {
     }
 }
 
-document.getElementById('totals').innerHTML = 'Totals for all ASonnetADay Tweets:  Likes = ' + totalLikes.toLocaleString() + ' Total Retweets = ' + totalRetweeets.toLocaleString();
+document.getElementById('totals').innerHTML = 'Totals for all ASonnetADay Tweets: <br>Likes = ' + totalLikes.toLocaleString() + '<br>Retweets = ' + totalRetweeets.toLocaleString();
 
 document.getElementById('lastupdate').innerHTML = last_update_date;
 
@@ -103,7 +103,17 @@ var trace2 = {
 var data = [trace1, trace2];
 
 var layout = {
-  //title: '@SirPat Sonnet Reading Like and Retweet Counts',
+  title: {
+      text: 'Like and Retweet Count By Sonnet Number',
+      font: {
+        size: 11,
+        color: '#333',
+      },
+      y: 1.0,
+      x: 0.5,
+      xanchor: 'center',
+      yanchor: 'top'
+  },
   xaxis: {
     title: {
         text: 'Sonnet Number',
@@ -134,6 +144,12 @@ var layout = {
     tickcolor: 'rgb(102, 102, 102)'
   },
   yaxis: {
+    title: {
+        text: 'Count',
+        font: {
+          size: 11,
+        }
+      },
     showgrid: false,
     gridcolor: 'rgb(102, 102, 102)',
     gridwidth: 1,
@@ -143,16 +159,17 @@ var layout = {
     }
   },
   margin: {
-    l: 30,
+    l: 40,
     r: 10,
     b: 80,
-    t: 10
+    t: 40
   },
   legend: {
     "orientation": "h",
-    x: 0,
-    xanchor: 'left',
-    y: 1.3,
+    x: .5,
+    y: 1.1,
+    yanchor: 'top',
+    xanchor: 'center',
     bgcolor: 'rgba(0,0,0,0)',
     font: {
       size: 10,
