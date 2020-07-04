@@ -65,6 +65,8 @@ for(var i = 0; i < sirpattweets.length; i++) {
 
 document.getElementById('totals').innerHTML = 'Totals for all ASonnetADay Tweets:  Likes = ' + totalLikes.toLocaleString() + ' Total Retweets = ' + totalRetweeets.toLocaleString();
 
+document.getElementById('lastupdate').innerHTML = last_update_date;
+
 var trace1 = {
   type: 'scatter',
   x: sonnets,
