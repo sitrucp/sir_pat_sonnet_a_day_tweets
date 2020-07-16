@@ -54,7 +54,7 @@ def main():
         if any("ASonnetADay" in s for s in hashtags):
             tweets.append(tweet_dict)
 
-        tweets_sorted = sorted(tweets, key=lambda k: k['id'])
+        tweets_sorted = sorted(tweets, key=lambda k: k['id'],reverse = True)
 
     #create json file and write tweets
     with open(os.path.join(upload_path, 'sirpattweets.json'), 'w', encoding='utf8') as file:
