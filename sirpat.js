@@ -1,7 +1,10 @@
 
 //////////////////////
 // TABLE OF TWEETS
-    
+
+sirpattweets_table = sirpattweets;
+sirpattweets_table.sort((a, b) => parseInt(b.id) - parseInt(a.id));
+
 $(document).ready(function () {
     var thead;
     var thead_tr;
@@ -20,8 +23,8 @@ $(document).ready(function () {
     var tbody_tr;
     tbody = $("<tbody>");
     $('table').append(tbody);
-    for(var i = 0; i < sirpattweets.length; i++) {
-        var obj = sirpattweets[i];
+    for(var i = 0; i < sirpattweets_table.length; i++) {
+        var obj = sirpattweets_table[i];
         tbody_tr = $('<tr/>');
         
         tbody_tr.append("<td>" + new Date(obj.created_at).toISOString().substring(0, 10) + "</td>");
@@ -52,6 +55,7 @@ var likes = [];
 var retweets = [];
 var totalLikes = null
 var totalRetweeets = null;
+
 for(var i = 0; i < sirpattweets.length; i++) {
     var obj = sirpattweets[i];
     if (getSonnetNumber(obj.text) !== 'Intermission') {
