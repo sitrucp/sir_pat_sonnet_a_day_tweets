@@ -2,7 +2,7 @@
 //////////////////////
 // TABLE OF TWEETS
 
-sirpattweets_table = sirpattweets;
+sirpattweets_table = sirpattweets.slice(0);
 sirpattweets_table.sort((a, b) => parseInt(b.id) - parseInt(a.id));
 
 $(document).ready(function () {
