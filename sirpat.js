@@ -5,12 +5,14 @@
 sirpattweets_table = sirpattweets.slice(0);
 sirpattweets_table.sort((a, b) => parseInt(b.id) - parseInt(a.id));
 
+console.log(JSON.stringify(sirpattweets_table));
+
 $(document).ready(function () {
     var thead;
     var thead_tr;
     thead = $("<thead>");
     thead_tr = $("<tr/>");
-    thead_tr.append("<th style='width: 10%'>Date</th>");
+    thead_tr.append("<th style='width: 10%' data-sortinitialorder='asc'>Date</th>");
     thead_tr.append("<th style='text-align: center'>Sonnet</th>");
     thead_tr.append("<th style='text-align: center'>Link</th>");
     thead_tr.append("<th style='text-align: right'>Likes</th>");
@@ -44,7 +46,8 @@ function getSonnetNumber(text) {
 
 // add tablesorter js to allow user to sort table by column headers
 $(document).ready(function($){ 
-    $("#sirpattweets").tablesorter();
+    $("#sirpattweets").tablesorter({
+    });
 }); 
 
 //////////////////////
