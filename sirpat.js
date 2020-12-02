@@ -5,7 +5,7 @@
 sirpattweets_table = sirpattweets.slice(0);
 sirpattweets_table.sort((a, b) => parseInt(b.id) - parseInt(a.id));
 
-console.log(JSON.stringify(sirpattweets_table));
+//console.log(JSON.stringify(sirpattweets_table));
 
 $(document).ready(function () {
     var thead;
