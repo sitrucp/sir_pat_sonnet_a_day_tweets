@@ -11,7 +11,7 @@ function showStatus(message) {
 // Explicit data names avoid the browser global created by table id="sirpattweets".
 var tweets = window.sirpatArchiveTweets;
 if (!Array.isArray(tweets) || tweets.length === 0) {
-    showStatus('The archive data could not be loaded. Please check that data/sirpattweets.js was uploaded beside this page, then reload.');
+    showStatus('The tweet data could not be loaded. Please check that data/sirpattweets.js was uploaded beside this page, then reload.');
     return;
 }
 
@@ -24,7 +24,7 @@ var validData = tweets.every(function (tweet) {
         tweet.twitter_url === 'https://twitter.com/SirPatStew/status/' + tweet.id;
 });
 if (!validData) {
-    showStatus('The archive data is incomplete or invalid. Please restore the supplied data/sirpattweets.js file, then reload.');
+    showStatus('The tweet data is incomplete or invalid. Please restore the supplied data/sirpattweets.js file, then reload.');
     return;
 }
 if (typeof window.jQuery !== 'function') {
@@ -91,7 +91,7 @@ $(document).ready(function($){
     if (typeof $.fn.tablesorter === 'function') {
         $("#sirpattweets").tablesorter({});
     } else {
-        showStatus('The archived data is available, but the table-sorting library could not load. Please reload to enable column sorting.');
+        showStatus('The tweet data is available, but the table-sorting library could not load. Please reload to enable column sorting.');
     }
 }); 
 
@@ -115,7 +115,7 @@ for(var i = 0; i < tweets.length; i++) {
     }
 }
 
-document.getElementById('totals').innerHTML = 'Historical totals for charted sonnet tweets in this partial archive: <br>Likes = ' + totalLikes.toLocaleString() + '<br>Retweets = ' + totalRetweeets.toLocaleString();
+document.getElementById('totals').innerHTML = 'Totals for charted sonnet tweets: <br>Likes = ' + totalLikes.toLocaleString() + '<br>Retweets = ' + totalRetweeets.toLocaleString();
 
 if (typeof window.sirpatArchiveUpdated === 'string') {
     document.getElementById('lastupdate').textContent = window.sirpatArchiveUpdated;
@@ -242,13 +242,13 @@ if (window.Plotly && typeof window.Plotly.newPlot === 'function') {
     try {
         var plot = window.Plotly.newPlot('chart', data, layout, config);
         if (plot && typeof plot.catch === 'function') {
-            plot.catch(function () { showStatus('The chart could not be drawn. The archived tweet table is still available below.'); });
+            plot.catch(function () { showStatus('The chart could not be drawn. The tweet table is still available below.'); });
         }
     } catch (error) {
-        showStatus('The chart could not be drawn. The archived tweet table is still available below.');
+        showStatus('The chart could not be drawn. The tweet table is still available below.');
     }
 } else {
-    showStatus('The chart library could not load. The archived tweet table is still available below; please reload to retry the chart.');
+    showStatus('The chart library could not load. The tweet table is still available below; please reload to retry the chart.');
 }
 })();
 
