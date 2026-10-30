@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,13 +31,18 @@
         <div class="col-md">
             <h4 style="margin-top:30px; margin-bottom:30px">@SirPatStew #ASonnetADay Dashboard</h4>
 
-            <p>Sir Patrick Stewart <a href="https://twitter.com/SirPatStew" target="blank">@SirPatStew</a> has been doing Shakespeare Sonnet readings from his home during COVID-19 lockdown and they are quite good!</p>
+            <p>Sir Patrick Stewart <a href="https://twitter.com/SirPatStew" target="blank">@SirPatStew</a> shared Shakespeare Sonnet readings from his home during the 2020 COVID-19 lockdown and they are quite good!</p>
 
-            <p>They are being posted in Twitter so I was compelled to get the Tweet data and create an interactive table with links to each tweet to allow everyone to easily watch them, as well as create a visualization of the tweets' likes and retweet counts to show popularity. Updated regularly. Enjoy!</p>
+            <p>They were posted on Twitter, so I collected the tweet data and created an interactive table with links to each tweet to allow everyone to easily watch them, as well as created a visualization of the tweets' likes and retweet counts to show popularity. Enjoy this historical archive!</p>
+
+            <p class="alert alert-info"><strong>July 2020 archive — partial series.</strong> This recovered snapshot contains 63 tweets posted March 23–July 3, 2020, not the complete sonnet series. Likes and retweets are historical counts, not current statistics.</p>
+
+            <p id="dashboard-status" role="status" aria-live="polite" hidden></p>
+            <noscript><p class="alert alert-warning">JavaScript is required to display the archived chart and tweet table.</p></noscript>
 
             <p id="totals"></p>
 
-            <p><em>Last updated: <span id="lastupdate"></span></em></p>
+            <p><em>Data snapshot last updated: <span id="lastupdate">2020-07-04 11:42 AM</span></em></p>
 
             <div id="chart" style="margin-top: 30px"></div>
 
@@ -53,9 +58,9 @@
     </div>
 </div>
 
-<script src="https://009co.com/public_data/sirpat/sirpattweets.json" type="text/javascript"></script>
+<script src="./data/sirpattweets.js" type="text/javascript"></script>
 
-<script src="https://009co.com/public_data/sirpat/last_update_date.json" type="text/javascript"></script>
+<script src="./data/last-update.js" type="text/javascript"></script>
 
 <script src="sirpat.js"></script>
 

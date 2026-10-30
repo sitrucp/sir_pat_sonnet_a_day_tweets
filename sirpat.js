@@ -1,9 +1,51 @@
+(function () {
+'use strict';
+
+function showStatus(message) {
+    var status = document.getElementById('dashboard-status');
+    status.textContent = message;
+    status.className = 'alert alert-warning';
+    status.hidden = false;
+}
+
+// Explicit data names avoid the browser global created by table id="sirpattweets".
+var tweets = window.sirpatArchiveTweets;
+if (!Array.isArray(tweets) || tweets.length === 0) {
+    showStatus('The archive data could not be loaded. Please check that data/sirpattweets.js was uploaded beside this page, then reload.');
+    return;
+}
+
+var validData = tweets.every(function (tweet) {
+    return tweet && typeof tweet.id === 'string' && /^\d+$/.test(tweet.id) &&
+        typeof tweet.created_at === 'string' && /^\d{4}-\d{2}-\d{2}/.test(tweet.created_at) &&
+        Number.isFinite(Date.parse(tweet.created_at.substring(0, 10) + 'T00:00:00Z')) &&
+        typeof tweet.text === 'string' && /^\d+$/.test(String(tweet.favorite_count)) &&
+        /^\d+$/.test(String(tweet.retweet_count)) &&
+        tweet.twitter_url === 'https://twitter.com/SirPatStew/status/' + tweet.id;
+});
+if (!validData) {
+    showStatus('The archive data is incomplete or invalid. Please restore the supplied data/sirpattweets.js file, then reload.');
+    return;
+}
+if (typeof window.jQuery !== 'function') {
+    showStatus('A display library could not be loaded. Please check your internet connection or content blocker, then reload.');
+    return;
+}
+
+function escapeHtml(value) {
+    return String(value).replace(/[&<>"']/g, function (character) {
+        return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[character];
+    });
+}
 
 //////////////////////
 // TABLE OF TWEETS
 
-sirpattweets_table = sirpattweets.slice(0);
-sirpattweets_table.sort((a, b) => parseInt(b.id) - parseInt(a.id));
+var sirpattweets_table = tweets.slice(0);
+// Compare ID strings without losing precision on Twitter's 64-bit IDs.
+sirpattweets_table.sort(function (a, b) {
+    return b.id.length - a.id.length || (a.id < b.id ? 1 : a.id > b.id ? -1 : 0);
+});
 
 //console.log(JSON.stringify(sirpattweets_table));
 
@@ -20,21 +62,21 @@ $(document).ready(function () {
     thead_tr.append("<th>Tweet</th>");
     thead_tr.append("</tr>");
     thead.append(thead_tr);
-    $('table').append(thead);
+    $('#sirpattweets').append(thead);
     var tbody;
     var tbody_tr;
     tbody = $("<tbody>");
-    $('table').append(tbody);
+    $('#sirpattweets').append(tbody);
     for(var i = 0; i < sirpattweets_table.length; i++) {
         var obj = sirpattweets_table[i];
         tbody_tr = $('<tr/>');
         
-        tbody_tr.append("<td>" + new Date(obj.created_at).toISOString().substring(0, 10) + "</td>");
+        tbody_tr.append("<td>" + obj.created_at.substring(0, 10) + "</td>");
         tbody_tr.append("<td style='text-align: center'>" + getSonnetNumber(obj.text) + "</td>");
         tbody_tr.append("<td style='text-align: center'><a href='" + obj.twitter_url + "' target='blank'>link</a></td>");
         tbody_tr.append("<td style='text-align: right'>" + parseInt(obj.favorite_count).toLocaleString() + "</td>");
         tbody_tr.append("<td style='text-align: right'>" + parseInt(obj.retweet_count).toLocaleString() + "</td>");
-        tbody_tr.append("<td>" + obj.text + "</td>");
+        tbody_tr.append("<td>" + escapeHtml(obj.text) + "</td>");
         tbody.append(tbody_tr);
     }
 });
@@ -46,8 +88,11 @@ function getSonnetNumber(text) {
 
 // add tablesorter js to allow user to sort table by column headers
 $(document).ready(function($){ 
-    $("#sirpattweets").tablesorter({
-    });
+    if (typeof $.fn.tablesorter === 'function') {
+        $("#sirpattweets").tablesorter({});
+    } else {
+        showStatus('The archived data is available, but the table-sorting library could not load. Please reload to enable column sorting.');
+    }
 }); 
 
 //////////////////////
@@ -56,11 +101,11 @@ $(document).ready(function($){
 var sonnets = [];
 var likes = [];
 var retweets = [];
-var totalLikes = null
-var totalRetweeets = null;
+var totalLikes = 0;
+var totalRetweeets = 0;
 
-for(var i = 0; i < sirpattweets.length; i++) {
-    var obj = sirpattweets[i];
+for(var i = 0; i < tweets.length; i++) {
+    var obj = tweets[i];
     if (getSonnetNumber(obj.text) !== 'Intermission') {
         sonnets.push(getSonnetNumber(obj.text));
         likes.push(obj.favorite_count);
@@ -70,9 +115,11 @@ for(var i = 0; i < sirpattweets.length; i++) {
     }
 }
 
-document.getElementById('totals').innerHTML = 'Totals for all ASonnetADay Tweets: <br>Likes = ' + totalLikes.toLocaleString() + '<br>Retweets = ' + totalRetweeets.toLocaleString();
+document.getElementById('totals').innerHTML = 'Historical totals for charted sonnet tweets in this partial archive: <br>Likes = ' + totalLikes.toLocaleString() + '<br>Retweets = ' + totalRetweeets.toLocaleString();
 
-document.getElementById('lastupdate').innerHTML = last_update_date;
+if (typeof window.sirpatArchiveUpdated === 'string') {
+    document.getElementById('lastupdate').textContent = window.sirpatArchiveUpdated;
+}
 
 var trace1 = {
   type: 'scatter',
@@ -191,5 +238,17 @@ var config = {
     responsive: true
 };
 
-Plotly.newPlot('chart', data, layout,config);
+if (window.Plotly && typeof window.Plotly.newPlot === 'function') {
+    try {
+        var plot = window.Plotly.newPlot('chart', data, layout, config);
+        if (plot && typeof plot.catch === 'function') {
+            plot.catch(function () { showStatus('The chart could not be drawn. The archived tweet table is still available below.'); });
+        }
+    } catch (error) {
+        showStatus('The chart could not be drawn. The archived tweet table is still available below.');
+    }
+} else {
+    showStatus('The chart library could not load. The archived tweet table is still available below; please reload to retry the chart.');
+}
+})();
 
